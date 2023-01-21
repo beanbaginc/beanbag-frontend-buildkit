@@ -24,6 +24,7 @@ make changes.
 
 * [Babel 7](https://babeljs.io/) (7.20 or higher), with:
     * [TypeScript support](https://www.npmjs.com/package/@babel/preset-typescript)
+    * [decorator proposals](https://www.npmjs.com/package/@babel/plugin-proposal-decorators] for experimental decorator support.
     * [dedent plugin](https://www.npmjs.com/package/babel-plugin-dedent) for
 	  dedenting template literals.
     * [Django gettext plugin](https://www.npmjs.com/package/babel-plugin-django-gettext)
@@ -31,7 +32,9 @@ make changes.
 
 * [rollup.js 3](https://rollupjs.org/) (3.9 or higher), with:
     * [Babel plugin](https://www.npmjs.com/package/@rollup/plugin-babel), to
-	  compile source files using Babel.
+    * [dts plugin](https://www.npmjs.com/package/rollup-plugin-dts),
+	  bundle TypeScript `.d.ts` files.
+    * [external-globals plugin](https://www.npmjs.com/package/rollup-plugin-external-globals), to rewrite imports from specific modules to use global JavaScript namespaces instead.
     * [node-resolve plugin](https://www.npmjs.com/package/@rollup/plugin-node-resolve),
 	  to help locate imported modules within `node_modules`.
 
