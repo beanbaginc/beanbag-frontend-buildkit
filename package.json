@@ -1,6 +1,6 @@
 {
     "name": "@beanbag/frontend-buildkit",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Dependencies and tools for building front-end static media files for Beanbag products and extensions.",
     "homepage": "https://github.com/beanbaginc/beanbag-frontend-buildkit",
     "github": "https://github.com/beanbaginc/beanbag-frontend-buildkit",
@@ -32,7 +32,7 @@
         "@rollup/plugin-babel": "^6.0.3",
         "@rollup/plugin-node-resolve": "^15.0.1",
         "babel-plugin-dedent": "^2.1.0",
-        "babel-plugin-django-gettext": "^1.2.0",
+        "babel-plugin-django-gettext": "^1.2.1",
         "less": "^4.1.3",
         "rollup": "^3.9.0",
         "rollup-plugin-dts": "^5.1.1",
