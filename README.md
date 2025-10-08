@@ -16,29 +16,33 @@ make changes.
 
 ### CSS Build Tools
 
-* [LessCSS 4](https://lesscss.org/) (4.1 or higher), with:
-    * [Auto-prefixer plugin](https://www.npmjs.com/package/@beanbag/less-plugin-autoprefix), for better cross-browser CSS compatibility.
+* [LessCSS](https://lesscss.org/), with:
+    * [Auto-prefixer plugin](https://www.npmjs.com/package/@beanbag/less-plugin-autoprefix),
+      for better cross-browser CSS compatibility.
 
 
 ### JavaScript Build Tools
 
-* [Babel 7](https://babeljs.io/) (7.20 or higher), with:
+* [Babel](https://babeljs.io/), with:
     * [TypeScript support](https://www.npmjs.com/package/@babel/preset-typescript)
-    * [decorator proposals](https://www.npmjs.com/package/@babel/plugin-proposal-decorators] for experimental decorator support.
+    * [decorator proposals](https://www.npmjs.com/package/@babel/plugin-proposal-decorators]
+      for experimental decorator support.
     * [dedent plugin](https://www.npmjs.com/package/babel-plugin-dedent) for
-	  dedenting template literals.
+      dedenting template literals.
     * [Django gettext plugin](https://www.npmjs.com/package/babel-plugin-django-gettext)
-	  for conveniently localizing strings in projects using Django.
+      for conveniently localizing strings in projects using Django.
 
-* [rollup.js 3](https://rollupjs.org/) (3.9 or higher), with:
+* [rollup.js](https://rollupjs.org/), with:
     * [Babel plugin](https://www.npmjs.com/package/@rollup/plugin-babel), to
-    * [dts plugin](https://www.npmjs.com/package/rollup-plugin-dts),
-	  bundle TypeScript `.d.ts` files.
-    * [external-globals plugin](https://www.npmjs.com/package/rollup-plugin-external-globals), to rewrite imports from specific modules to use global JavaScript namespaces instead.
+      transpile modern JavaScript.
+    * [dts plugin](https://www.npmjs.com/package/rollup-plugin-dts), bundle
+      TypeScript `.d.ts` files.
+    * [external-globals plugin](https://www.npmjs.com/package/rollup-plugin-external-globals),
+      to rewrite imports from specific modules to use global JavaScript namespaces instead.
     * [node-resolve plugin](https://www.npmjs.com/package/@rollup/plugin-node-resolve),
-	  to help locate imported modules within `node_modules`.
+      to help locate imported modules within `node_modules`.
 
-* [UglifyJS 3](https://www.npmjs.com/package/uglify-js) (3.16 or higher).
+* [Terser](https://terser.org/)
 
 
 ## Installation
@@ -49,9 +53,8 @@ To manually install this packages and its dependencies, run:
 npm install --save-dev beanbag-frontend-buildkit
 ```
 
-We also recommend installing [ESLint](https://eslint.org/) and our
-[beanbag-eslint-plugin](https://www.npmjs.com/package/@beanbag/eslint-plugin):
 
-```
-npm install --save-dev eslint @beanbag/eslint-plugin
-```
+We also recommend using
+[@beanbag/js-buildkit](https://www.npmjs.com/package/@beanbag/js-buildkit),
+which specifies the specific versions of TypeScript and ESLint, and includes
+our [ESLint plugin](https://www.npmjs.com/package/@beanbag/eslint-plugin).
